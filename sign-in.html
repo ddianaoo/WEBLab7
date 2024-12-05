@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Assistan+Display:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <title>Мій веб-додаток</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        Мій веб-додаток
+      </div>
+    </header>
+    <main class="sign-in-page">
+      
+      <form class="sign-in-form" autocomplete="off" novalidate>
+        <h2 class="sign-in-form__title">Вхід</h2>
+        <label class="input">
+          <span class="input__heading">Електронна пошта</span>
+          <input name="email" type="email" required placeholder="example@gmail.com"/>
+        </label>
+        <label class="input">
+          <span class="input__heading">Пароль</span>
+          <input
+            name="password"
+            type="password"
+            autocomplete="new-password"
+            required
+          />
+        </label>
+        <button class="button" type="submit">
+          Увійти
+        </button>
+      </form>
+      <span>
+        Ще немає акаунту?
+        <a
+          href="./sign-up.html"
+          class="sign-in-form__link"
+        >
+          Зареєструватися
+        </a>
+      </span>
+    </main>
+    <footer class="footer">
+      <span class="footer__text">
+        <img class="footer__icon" src="./images/heart.svg" alt="heart" />
+      </span>
+    </footer>
+    <script src="./js/form_validation.js"></script>
+  </body>
+</html>
