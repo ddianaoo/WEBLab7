@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Виконала Узун Діана</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header class="bg-secondary text-white text-center py-4">
+      <h2>Лабораторна робота No1</h2>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#top">Навігація</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Перемикач навігації">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#biography">Біографія</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#survey">Форма</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="biography" class="container mt-5">
+      <h2 class="text-center">Тіна Кароль</h2>
+      <h3 class="text-center"><i>Українська співачка та актриса</i></h3>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <img src="./images/Tina_Karol.jpg" alt="Фото Тіни Кароль" class="img-fluid rounded-circle mb-3"/>
+          <p class="text-center"><strong>Тіна Кароль</strong> — українська співачка, авторка пісень, акторка, ведуча, композиторка, музикантка, письменниця, благодійниця, продюсерка. Народна артистка України (2017), солістка Ансамблю пісні і танцю ЗСУ. Лауреатка пісенного конкурсу молодих виконавців <strong>«Нова хвиля 2005»</strong>. З піснею <strong>«Show me your love»</strong> представляла Україну на <strong>«Євробаченні 2006»</strong>, де посіла сьоме місце.</p>
+        </div>
+      </div>
+
+      <h3 class="mt-5">Хронологія життя Тіни Кароль</h3>
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th>Рік</th>
+      <th>Подія</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <td>1985</td>
+      <td>Народилася в місті Оротукан, Магаданська область, Росія</td>
+    </tr>
+    <tr class="table-secondary">
+      <td>1992</td>
+      <td>Переїхала з родиною в Україну</td>
+    </tr>
+    <tr class="table-success">
+      <td>2000</td>
+      <td>Вступила до музичного училища ім. Глієра, Київ</td>
+    </tr>
+    <tr class="table-danger">
+      <td>2005</td>
+      <td>Перемогла на конкурсі "Нова хвиля"</td>
+    </tr>
+    <tr class="table-warning">
+      <td>2006</td>
+      <td>Представляла Україну на "Євробаченні" з піснею "Show Me Your Love"</td>
+    </tr>
+    <tr class="table-info">
+      <td>2007</td>
+      <td>Народила сина Веніаміна</td>
+    </tr>
+    <tr class="table-light">
+      <td>2009</td>
+      <td>Втратила чоловіка Євгена Огіра</td>
+    </tr>
+    <tr class="table-success">
+      <td>2011</td>
+      <td>Отримала премію YUNA як найкраща співачка України</td>
+    </tr>
+    <tr class="table-primary">
+      <td>2014</td>
+      <td>Розпочала турне "Сила любові і голосу" в пам'ять про чоловіка</td>
+    </tr>
+    <tr class="table-warning">
+      <td>2017</td>
+      <td>Отримала звання Народної артистки України</td>
+    </tr>
+    <tr class="table-secondary">
+      <td>2020</td>
+      <td>Зайнялася благодійною діяльністю та стала членом журі в шоу "Голос країни"</td>
+    </tr>
+    <tr class="table-primary">
+      <td>2021</td>
+      <td>Випустила новий альбом і провела масштабний концертний тур по Україні</td>
+    </tr>
+  </tbody>
+</table>
+
+    </section>
+
+    <section id="survey" class="container mt-5">
+      <h2 class="text-center">Загальне опитування</h2>
+      <form action="/submit" method="POST">
+        <fieldset class="border p-4">
+          <legend class="w-auto">Форма для заповнення</legend>
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" class="form-control" required/>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Електронна пошта:</label>
+            <input type="email" id="email" name="email" class="form-control" required/>
+          </div>
+
+          <div class="mb-3">
+            <label for="age" class="form-label">Ваш вік:</label>
+            <select id="age" name="age" class="form-select">
+              <option value="under18">Менше 18</option>
+              <option value="18-25">18-25</option>
+              <option value="26-35">26-35</option>
+              <option value="36-50">36-50</option>
+              <option value="over50">Більше 50</option>
+            </select>
+          </div>
+
+          <fieldset class="mb-3">
+            <legend>Ваша стать:</legend>
+            <div>
+              <input type="radio" id="man" name="sex" value="man" class="form-check-input"/>
+              <label for="man" class="form-check-label">Чоловік</label>
+            </div>
+            <div>
+              <input type="radio" id="woman" name="sex" value="woman" class="form-check-input"/>
+              <label for="woman" class="form-check-label">Жінка</label>
+            </div>
+            <div>
+              <input type="radio" id="undefined" name="sex" value="undefined" class="form-check-input"/>
+              <label for="undefined" class="form-check-label">Не вказувати</label>
+            </div>
+          </fieldset>
+
+          <div class="mb-3">
+            <label>Про кого ви б ще хотіли дізнатись детальніше:</label>
+            <div>
+              <input type="checkbox" id="shevchenko" name="person" value="shevchenko" class="form-check-input"/>
+              <label for="shevchenko" class="form-check-label">Тарас Шевченко</label>
+            </div>
+            <div>
+              <input type="checkbox" id="franko" name="person" value="franko" class="form-check-input"/>
+              <label for="franko" class="form-check-label">Іван Франко</label>
+            </div>
+            <div>
+              <input type="checkbox" id="khmelnitsky" name="person" value="khmelnitsky" class="form-check-input"/>
+              <label for="khmelnitsky" class="form-check-label">Богдан Хмельницький</label>
+            </div>
+            <div>
+              <input type="checkbox" id="zelensky" name="person" value="zelensky" class="form-check-input"/>
+              <label for="zelensky" class="form-check-label">Володимир Зеленський</label>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-secondary">Відправити</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

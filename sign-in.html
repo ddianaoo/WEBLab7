@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Assistan+Display:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
@@ -19,22 +20,20 @@
       </div>
     </header>
     <main class="sign-in-page">
-      
-      <form class="sign-in-form" autocomplete="off" novalidate>
+      <div id="error-container"></div>
+      <form class="sign-in-form" autocomplete="off" novalidate method="POST">
         <h2 class="sign-in-form__title">Вхід</h2>
         <label class="input">
           <span class="input__heading">Електронна пошта</span>
-          <input name="email" type="email" required placeholder="example@gmail.com"/>
+          <input name="email" type="email" required placeholder="example@gmail.com" />
+          <span class="error-message" data-error-for="email" style="display: none; color: red;"></span>
         </label>
         <label class="input">
           <span class="input__heading">Пароль</span>
-          <input
-            name="password"
-            type="password"
-            autocomplete="new-password"
-            required
-          />
+          <input name="password" type="password" autocomplete="new-password" required />
+          <span class="error-message" data-error-for="password" style="display: none; color: red;"></span>
         </label>
+        
         <button class="button" type="submit">
           Увійти
         </button>
@@ -54,6 +53,8 @@
         <img class="footer__icon" src="./images/heart.svg" alt="heart" />
       </span>
     </footer>
-    <script src="./js/form_validation.js"></script>
+    <script src="./js/form_validation2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -231,7 +231,11 @@ select {
   }
 }
 
-.input--error {
+/* .input--error {
+  border: 2px solid red;
+} */
+
+.input.error input {
   border: 2px solid red;
 }
 
